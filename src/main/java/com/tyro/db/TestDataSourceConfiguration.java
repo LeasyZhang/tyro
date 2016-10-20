@@ -13,7 +13,6 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 import org.springframework.jdbc.datasource.init.DataSourceInitializer;
 import org.springframework.jdbc.datasource.init.ResourceDatabasePopulator;
@@ -31,7 +30,6 @@ public class TestDataSourceConfiguration {
 
 	@Bean(name = { "testDataSource" })
 	@ConfigurationProperties(prefix = "spring.test.datasource")
-	@Primary
 	public DataSource dataSource() {
 		return testDBProperties.getDataSource();
 	}
