@@ -22,4 +22,9 @@ public class UserController {
 	public List<User> userList() {
 		return userService.getUserList();
 	}
+
+	@RequestMapping(value = "/ping", method = RequestMethod.GET, produces = "application/json")
+	public String ping(){
+		return "pong";
+	}
 }
