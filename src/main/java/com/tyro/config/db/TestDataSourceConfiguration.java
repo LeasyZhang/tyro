@@ -1,4 +1,4 @@
-package com.tyro.db;
+package com.tyro.config.db;
 
 import java.util.Optional;
 

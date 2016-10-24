@@ -1,4 +1,4 @@
-package com.tyro.db;
+package com.tyro.config.db;
 
 public class DataSource extends org.apache.tomcat.jdbc.pool.DataSource {
 

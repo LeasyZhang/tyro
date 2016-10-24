@@ -1,12 +1,12 @@
-package com.tyro.db;
+package com.tyro.config.db;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.NestedConfigurationProperty;
 import org.springframework.context.annotation.Profile;
 
-@ConfigurationProperties("spring.test")
-@Profile("test")
-public class TestDBProperties {
+@ConfigurationProperties("spring.dev")
+@Profile("dev")
+public class DevDBProperties {
 
 	@NestedConfigurationProperty
 	private DataSource dataSource;
